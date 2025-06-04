@@ -1,47 +1,26 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+import { Box } from "@/components/box";
+import { Button, ButtonText } from "@/components/button";
+import { GluestackUIProvider } from "@/components/gluestack-ui-provider";
 import "@/global.css";
-import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { useFonts } from "expo-font";
+import "react-native-reanimated";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });
 
   if (!loaded) {
-    // Async font loading only occurs in development.
     return null;
   }
 
   return (
-    <GluestackUIProvider
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"
-      mode="light"><ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-                <Stack>
-                  <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-                  <Stack.Screen name="+not-found" />
-                </Stack>
-                <StatusBar style="auto" />
-              </ThemeProvider></GluestackUIProvider>
+    <GluestackUIProvider mode="light">
+      <Box className="flex flex-row justify-center align-middle p-5">
+        <Button>
+          <ButtonText>Hello world</ButtonText>
+        </Button>
+      </Box>
+    </GluestackUIProvider>
   );
 }
