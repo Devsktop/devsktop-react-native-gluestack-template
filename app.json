@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "debtly",
-    "slug": "debtly",
+    "name": "devsktop-react-native-gluestack-template",
+    "slug": "devsktop-react-native-gluestack-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "debtly",
+    "scheme": "devsktop-react-native-gluestack-template",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -40,3 +40,4 @@
     }
   }
 }
+

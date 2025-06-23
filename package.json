@@ -1,5 +1,5 @@
 {
-  "name": "debtly",
+  "name": "devsktop-react-native-gluestack-template",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -112,3 +112,4 @@
     ]
   }
 }
+
