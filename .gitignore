@@ -40,3 +40,5 @@ app-example
 
 *storybook.log
 storybook-static
+.vscode/*
+!.vscode/settings.json

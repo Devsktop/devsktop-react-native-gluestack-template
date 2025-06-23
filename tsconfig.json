@@ -3,19 +3,21 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "tailwind.config": [
-        "./tailwind.config.js"
-      ]
-    }
+      "@/*": ["./*"],
+      "tailwind.config": ["./tailwind.config.js"]
+    },
+    "baseUrl": ".",
+    "typeRoots": ["./app/types", "./node_modules/@types"],
+    "skipLibCheck": true
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "nativewind-env.d.ts"
-  ]
+    "nativewind-env.d.ts",
+    "app/types"
+  ],
+  "exclude": ["node_modules"]
 }
+
