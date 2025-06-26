@@ -7,7 +7,7 @@
       "tailwind.config": ["./tailwind.config.js"]
     },
     "baseUrl": ".",
-    "typeRoots": ["types", "./node_modules/@types"],
+    "typeRoots": ["./node_modules/@types"],
     "skipLibCheck": true
   },
   "include": [
@@ -15,9 +15,7 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "nativewind-env.d.ts",
-    "types"
+    "nativewind-env.d.ts"
   ],
   "exclude": ["node_modules"]
 }
-

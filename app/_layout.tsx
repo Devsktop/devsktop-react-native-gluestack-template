@@ -22,6 +22,7 @@ export default function RootLayout() {
       <Box className="flex flex-1 bg-background-0">
         <Box className="flex flex-row justify-center p-5 align-middle">
           <Button
+            variant="solid"
             onPress={() =>
               setColorScheme(colorScheme === "light" ? "dark" : "light")
             }
