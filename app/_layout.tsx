@@ -1,7 +1,7 @@
-import { Box } from "@/components/box";
-import { Button, ButtonText } from "@/components/button";
-import { GluestackUIProvider } from "@/components/gluestack-ui-provider";
 import "@/global.css";
+import { Box } from "@/ui/box";
+import { Button, ButtonText } from "@/ui/button";
+import { GluestackUIProvider } from "@/ui/gluestack-ui-provider";
 import { useFonts } from "expo-font";
 import { useColorScheme } from "nativewind";
 
@@ -23,6 +23,7 @@ export default function RootLayout() {
         <Box className="flex flex-row justify-center p-5 align-middle">
           <Button
             variant="solid"
+            action="positive"
             onPress={() =>
               setColorScheme(colorScheme === "light" ? "dark" : "light")
             }
